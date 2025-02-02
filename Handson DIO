@@ -1,0 +1,24 @@
+def validar_cpf(cpf):
+    cpf=list(map(int, cpf))
+    if len(cpf) != 11:
+        return False
+    sum_=sum(a*b for a,b in zip(cpf[0:9], range(10,1,-1)))
+    mod=11-sum_%11
+    if mod>9:
+        mod=0
+    if cpf[-2]!=mod:
+        return False
+    sum_=sum(a*b for a,b in zip(cpf[0:10], range(11,1,-1)))
+    mod=11-sum_%11
+    if mod>9:
+        mod=0
+    if cpf[-1]!=mod:
+        return False
+    return True
+
+    validar_cpf('153.509.460-56')
+    validar_cpf('15350946056')
+    validar_cpf('11111111111')
+    validar_cpf('123.456.789-09')
+    validar_cpf('529.982.247-25')
+           
