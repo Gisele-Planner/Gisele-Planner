@@ -1,0 +1,30 @@
+{
+	"info": {
+		"_postman_id": "671597bf-bf08-494e-8e5f-d5940f07eaaf",
+		"name": "App Valida CPF",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41738660"
+	},
+	"item": [
+		{
+			"name": "http://localhost:7071/api/fnvalidacpf",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7071/api/fnvalidacpf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"fnvalidacpf"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
